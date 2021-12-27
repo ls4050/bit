@@ -1,0 +1,5 @@
+db.banjang.insert({"name":"이원석", "age":"25",  "food":["삼겹살","한우"], "color":["초록색"], "favoritebook" : [{"book":"삼국지", "publisher":"애플북스", "genre":"무협지"}] })
+db.banjang.insert({"name":"경선재", "age":"27",  "food":["마라샹궈"], "color":["하늘색"], "favoritebook" : [{"book":"해리포터와마법사의 돌", "publisher":"문학수첩", "genre":"판타지"}] })
+db.banjang.insert({"name":"마상우", "age":"27",  "food":["햄버거"], "color":["파랑색"], "favoritebook" : [{"book":"데미안", "publisher":"민음사", "genre":"소설"}] })
+db.banjang.insert({"name":"천계환", "age":"29",  "food":["피자"], "color":["검정색"], "favoritebook" : [{"book":"파피용", "publisher":"열린책들", "genre":"소설"}] })
+db.banjang.insert({"name":"김재웅", "age":"28",  "food":["라면"], "color":["파랑색"], "favoritebook" : [{"book":"해리포터", "publisher":"문학수첩", "genre":"판타지"}] })
