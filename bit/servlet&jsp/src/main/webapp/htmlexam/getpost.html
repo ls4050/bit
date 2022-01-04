@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>서블릿을 요청하는 다양한 방법</h1>
+	<hr>
+	<!-- 
+		하이퍼링크 이용하는 것 = get방식 
+	 	name-value쌍으로 요청하는 것 = get 
+	 	a태그로하면 사람이 이름을 직접 전달할 수 없다 그러나, form태그로하면 사람이 직접 이름을 입력하여 전달할 수 있다
+	 	get방식은 쿼리문자에 제한이 있따 이를 보완한 것이 POST 
+	 -->
+	<a href="/edu/getpost?name=듀크">하이퍼링크로 요청</a>
+	<hr>
+	<form method="get" action="/edu/getpost">
+		<input type="text" placeholder="이름을입력하세요" name="name"> 
+		<input type="submit" value="GET방식요청">
+	</form>
+	<hr>
+	<!-- POST방식은 반드시 form태그를 써야하며 쿼리가 밖으로 노출되지않음 -->
+	<form method="post" action="/edu/getpost">
+		<input type="text" placeholder="이름을입력하세요" name="name"> 
+		<input type="submit" value="POST방식요청">
+	</form>
+</body>
+</html>
+
+

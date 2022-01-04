@@ -1,0 +1,31 @@
+<!--  파일명 : uploadexam/multipart.html -->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>File Upload Sample</title>
+<style>
+	input {
+		margin : 5px;
+	}
+</style>
+</head>
+<!-- get방식 못쓴다, enctype form-data 줘야한다, file 선택시 multiple있으면 여러개 파일 선택가능하다 -->
+<body>
+	<form action="/edu/part"  enctype="multipart/form-data" 
+	                           method="post"> 
+		<label>작성자 이름 :  <input type="text" name="myname" /> </label><br>
+		<label>작성자  폰번호 : <input type="text" name="myphone" /> </label><br>
+		<label>첨부 파일 :  <input type="file" name="myfile" multiple/></label><br>
+		<input type="submit"	value="전송" />
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+

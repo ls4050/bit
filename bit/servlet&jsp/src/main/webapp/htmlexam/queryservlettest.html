@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>입력폼 학습</h1>
+<hr>
+<!-- 전달되는 쿼리내용이 외부로 노출되도 상관없으면 GET방식 사용 -->
+<!-- html요청서버, servlet요청서버가 동일할 경우 앞에생략하고 사용 html에 요청했던 서버정보로 나머지를 채워서 요청 -->
+<!-- form method="GET" Action="/edu/query">
+<!-- 절대 URL -->
+<form method="GET" Action="http://localhost:8080/edu/query">
+이름 <input type="text" name="p1" required><br>
+나이 <input type="number" name="p2"><br>
+좋아하는 음식 <br>
+햄버거 <input type="checkbox"  name="p3" value="햄버거">
+비지찌게 <input type="checkbox"  name="p3" value="비지찌게">
+회덮밥 <input type="checkbox"  name="p3" value="회덮밥">
+돈까스 <input type="checkbox"  name="p3" value="돈까스"><br>
+<input type="submit" value="전송하기">
+<input type="reset" value="초기상태로">
+</form>
+</body>
+</html>
+

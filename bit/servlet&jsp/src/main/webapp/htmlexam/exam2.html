@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>입력폼 학습</h1>
+<hr>
+<!-- 폼태그 학습 -->
+<!-- 사용자에게 무엇인가를 입력하게 만들 수 있는 기능 = 폼태그 -->
+<!-- 메서드 방식을 생략하면 default는 GET방식 -->
+<!-- 액션속성생략 => 자기자신을 또 부른다 -->
+<!-- 모든 input태그에 name속성은 필수다 -->
+<!-- name은 unique해야한다 (multicheckbox제외) -->
+<form>
+<!-- text인풋타입은 타이핑하는 것이 보인다 -->
+<!-- required는 필수라는 의미, 무조건 써야함 -->
+이름 <input type="text" name="stname" required><br>
+<!-- pass니까 타이핑하는 것이 가려진다 -->
+암호 <input type="password" name="stpwd"><br>
+<!-- num은 숫자만 써야한다 -->
+나이 <input type="number" name="stage"><br> <!-- HTML5 -->
+좋아하는 칼라 <input type="color" name="stcolor"><br> <!-- HTML5 -->
+좋아하는 음식 <br>
+<!-- multicheckbox는 name이 모두 똑같아야한다 -->
+<!-- value를 지정해야 뭐가 선택되는지 알 수 있다(안할 시에는 on이라는 형태로 간다) -->
+<!-- value = 서버에게 어떤 형식으로 줄지 -->
+햄버거 <input type="checkbox"  name="stfood" value="f1">
+비지찌게 <input type="checkbox"  name="stfood" value="f2">
+회덮밥 <input type="checkbox"  name="stfood" value="f3">
+돈까스 <input type="checkbox"  name="stfood" value="f4"><br>
+성별 <br>
+남성 <input type="radio"  name="gender" value="male">
+여성 <input type="radio"  name="gender" value="female"><br>
+<!-- 우리가 여태 입력했던 모든 것을 server에게 요청한다 = submit -->
+<!-- 여기서 value는 인풋태그에 들어가는 text임 -->
+<input type="submit" value="전송하기">
+<input type="reset" value="초기상태로">
+<!-- 요청파라미터, 쿼리문자열 = 웹서버에 뭔가를 요청하면서 함께 전달하는 name=value형식의 문자열을 Query String 또는 Request Parameter 라고 한다 -->
+<!-- (GET)방식 = Query String -->
+<!-- (POST)방식 = Reaquest Parameter -->
+<!-- http://localhost:8080/edu/htmlexam/exam2.html?stname=%ED%95%98%ED%95%98%ED%95%98
+&stpwd=4321
+&stage=18
+&stcolor=%2397d510
+&stfood=f2&stfood=f3&stfood=f4
+&gender=male
+pwd age color food gender 다 쿼리문자열 -->
+</form>
+</body>
+</html>
+

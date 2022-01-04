@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>visitorForm</title>
+</head>
+<body>
+	    <form method="GET" 
+	    action="http://localhost:8080/edu/visitorget">
+	    <!-- value속성을 사용해서 default로 듀크를 출력 -->
+	    <!-- placeholder랑은 다름 얘는 간단하게 힌트만 출력하는 것 -->
+	    <!-- type값이 생략되면 디폴트는 text -->
+	    <h1>글을 남겨주세요</h1>
+	    <hr>
+		이름 : <input placeholder="이름을 입력하세요" name="stname" required><br>
+		남기고자 하는 의견: <br>
+		<textarea name="op" rows="10" cols="35"></textarea><br>
+		
+		<input type="submit" value="등록">
+		<input type="reset" value="재작성">
+	</form>
+</body>
+</html>
