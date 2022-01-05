@@ -9,8 +9,10 @@
 <body>
 <h2>EL의 Query 문자열 추출</h2>
 <hr>
+<%-- param.message가 empty이면~true --%>
 전달된 메시지의 존재 여부 : ${ !empty param.message }<hr>
 전달된 메시지의 내용은 ${param.message} 입니다.<br>
+<%-- 객체로 줄때는 반드시 문자열 형식으로 줘야한다 --%>
 전달된 메시지의 내용은 ${param["message"]} 입니다.<br>
 전달된 메시지의 내용은 <%= request.getParameter("message") %> 입니다.<br>
 </body>
