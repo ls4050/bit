@@ -19,10 +19,13 @@ mylist.add(new TestBean("도우너"));
 pageContext.setAttribute("list", mylist); 
 %>
 <h3>객체의 멤버 접근</h3>
-${ today.year }년 ${ today.month }월 ${ today.date }일
+<%-- today가 자바객체이므로 year는 프로퍼티명(getYear호출) --%>
+${ pageScope.today.year }년 ${ today.month }월 ${ today.date }일
 <h3>컬렉션의 객체 사용</h3>
+<%-- 꺼내온 객체가 testBean이라는 일반 객체 --%>
 ${ list[0].name }-${ list[1].name }-${ list[2].name }<br>
 <h3>클래스의 정적 멤버 사용</h3>
+<%-- 외부클래스의 클래스멤버는 클래스멤버.메서드명 방식으로 호출가능 --%>
 ${ LanguageInfoBean.name }<br>
 ${ LanguageInfoBean.getBirthYear() }<br>
 ${ LanguageInfoBean.getKindInfo() }<br> 
