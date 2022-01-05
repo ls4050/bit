@@ -48,7 +48,7 @@ public class MemberServlet extends HttpServlet {
 		vo.setPwd(pwd);
 
 		request.setAttribute("objMember", vo);
-		request.getRequestDispatcher("/jspsrc/MemberView.jsp").forward(request, response);
+		request.getRequestDispatcher("/jspsrc/MemberViewEL.jsp").forward(request, response);
 	}
 
 }

@@ -14,6 +14,6 @@
 	선택된 바나나의 개수 : ${objProduct.banana} <br>
 	선택된 할라봉의 개수 : ${objProduct.halabong} 
 	<hr>
-	<a href="<%= request.getHeader("referer") %>">상품선택화면으로</a>
+	<a href="${header.referer}">상품선택화면으로</a>
 </body>
 </html>

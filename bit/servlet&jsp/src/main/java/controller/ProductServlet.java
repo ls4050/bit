@@ -38,7 +38,7 @@ public class ProductServlet extends HttpServlet {
 			request.getRequestDispatcher("/edu/htmlexam/product.html").forward(request, response);
 		}
 		
-		request.getRequestDispatcher("/jspsrc/productView.jsp").forward(request, response);
+		request.getRequestDispatcher("/jspsrc/productViewEL.jsp").forward(request, response);
 		
 	}
 }
